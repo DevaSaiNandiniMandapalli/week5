@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siblings Styling</title>
+    <style>
+        .sibling {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="sibling" id="firstSibling">Sibling 1</div>
+    <div class="sibling">Sibling 2</div>
+    <div class="sibling">Sibling 3</div>
+
+    <script>
+        var sibling = document.getElementById('firstSibling');
+        var fontSize = 16;
+        while (sibling) {
+            sibling.style.fontSize = fontSize + 'px';
+            fontSize += 2;
+            sibling = sibling.nextElementSibling;
+        }
+    </script>
+</body>
+</html>

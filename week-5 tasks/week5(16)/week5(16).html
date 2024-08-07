@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Resize Event</title>
+</head>
+<body>
+    <h1>Resize the Window</h1>
+    <p>Check the console to see the window dimensions.</p>
+
+    <script>
+        window.addEventListener('resize', () => {
+            console.log(`Window dimensions: ${window.innerWidth} x ${window.innerHeight}`);
+        });
+    </script>
+</body>
+</html>

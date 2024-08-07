@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Content</title>
+</head>
+<body>
+    <span id="mySpan">Original Text</span>
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        function changeText() {
+            var spanElement = document.getElementById('mySpan');
+            spanElement.textContent = 'New Text Content';
+        }
+    </script>
+</body>
+</html>

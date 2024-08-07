@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+        }
+        .thumbnails img {
+            width: 100px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .main-image img {
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="main-image">
+            <img id="mainImage" src="https://midriffinfosolution.org/wp-content/uploads/2022/03/web-development.jpg" alt="Main Image">
+        </div>
+        <div class="thumbnails">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx46avqWKnjI7SmD2qS1WVXArFM6Ly1A-5dsjNEFTJ5fN3HaRb8KUWo5M2hkh8efJNvxo&usqp=CAU" alt="Thumbnail 1" onclick="changeImage(this)">
+            <img src="https://jessup.edu/wp-content/uploads/2024/01/Is-Web-Development-Oversaturated.jpg" alt="Thumbnail 2" onclick="changeImage(this)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIgYQeNaifsNkIYxj1xn-x-XIhugSmsc4i4g&s" alt="Thumbnail 3" onclick="changeImage(this)">
+        </div>
+    </div>
+
+    <script>
+        function changeImage(thumbnail) {
+            var mainImage = document.getElementById('mainImage');
+            mainImage.src = thumbnail.src;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First and Last Child Styles</title>
+    <style>
+        .container {
+            padding: 10px;
+        }
+        .child {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="parentDiv">
+        <div class="child">First Child</div>
+        <div class="child">Middle Child</div>
+        <div class="child">Last Child</div>
+    </div>
+    <script>
+        var parentDiv = document.getElementById('parentDiv');
+        var firstChild = parentDiv.firstElementChild;
+        var lastChild = parentDiv.lastElementChild;
+        firstChild.style.backgroundColor = 'lightgreen';
+        lastChild.style.backgroundColor = 'lightcoral';
+    </script>
+</body>
+</html>

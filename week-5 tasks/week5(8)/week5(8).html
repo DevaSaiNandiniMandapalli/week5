@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image Source</title>
+</head>
+<body>
+    <img id="myImage" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg" alt="Placeholder Image">
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+        function changeImage() {
+            var imgElement = document.getElementById('myImage');
+            imgElement.setAttribute('src', 'https://previews.123rf.com/images/masterart/masterart1308/masterart130800004/21935142-a-word-cloud-of-html-and-css-related-items.jpg');
+        }
+    </script>
+</body>
+</html>
